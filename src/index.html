@@ -18,7 +18,7 @@ path: home
       {% for actor in actors.actors %}
         <li>
           <a href="actors/{{actor | full_name | slugify}}/">
-            <img src="/static/media/{{actor.photo_small}}" />
+            <img src="/static/media/{{actor.photo_small}}" alt="{{ actor | full_name}} headshot"/>
             <caption>{{actor | full_name}}</caption>
           </a>
         </li>
