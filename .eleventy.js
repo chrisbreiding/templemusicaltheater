@@ -13,16 +13,13 @@ module.exports = function (eleventyConfig) {
     return `${actor.first_name} ${actor.last_name}`
   })
 
-  // Copy Static Files to /_Site
+  // Copy config for netlify CMS
   eleventyConfig.addPassthroughCopy({
     './src/admin/config.yml': './admin/config.yml',
   })
 
   // Copy static assets to /_site
-  eleventyConfig.addPassthroughCopy('./src/static/img')
-  eleventyConfig.addPassthroughCopy('./src/static/media')
-  eleventyConfig.addPassthroughCopy('./src/static/fonts')
-  eleventyConfig.addPassthroughCopy('./src/favicon.ico')
+  eleventyConfig.addPassthroughCopy('./src/static')
 
   // Let Eleventy transform HTML files as nunjucks
   // So that we can use .html instead of .njk
