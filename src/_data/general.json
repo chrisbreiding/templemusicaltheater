@@ -3,7 +3,6 @@
   "subheading": "Musical Theater BFA Class of 2022",
   "department_website_text": "For more information about our program, please visit our department website.",
   "department_website_url": "https://tfma.temple.edu/",
-  "footer_text": "Copyright © 2022 Temple Theaters, Temple University, Philadelphia, PA",
   "instagram_text": "Stay connected with Temple University Theater's current students and alumni on Instagram!",
   "instagram_accounts": [
     {
@@ -14,5 +13,6 @@
       "text": "@TempleMusicalTheatre",
       "url": "https://www.instagram.com/templemusicaltheatre/"
     }
-  ]
+  ],
+  "footer_text": "Copyright © 2022 Temple Theaters, Temple University, Philadelphia, PA"
 }

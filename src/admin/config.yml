@@ -28,7 +28,6 @@ collections:
           - { label: "Department Website Text", name: "department_website_text", widget: "string" }
           - { label: "Department Website URL", name: "department_website_url", widget: "string" }
           - { label: "Instagram Text", name: "instagram_text", widget: "string" }
-          - { label: "Footer Text", name: "footer_text", widget: "string" }
           - label: Instagram Accounts
             name: instagram_accounts
             widget: list
@@ -37,6 +36,7 @@ collections:
             fields:
               - { label: Text, name: text, widget: string }
               - { label: URL, name: url, widget: string }
+          - { label: "Footer Text", name: "footer_text", widget: "string" }
       - label: "Home"
         name: "home"
         file: "src/_data/home.json"
