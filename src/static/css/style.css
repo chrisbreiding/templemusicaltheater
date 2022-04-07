@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Lemon Milk Regular";
+  src: url("/static/fonts/lemon-milk-regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Questrial Regular";
+  src: url("/static/fonts/questrial-regular.ttf") format("truetype");
+}
+
+:root {
+  --primary-color: #a41e35;
+  --primary-color-50: #C47988;
+  --primary-color-25: #E1BAC1;
+  --secondary-color: #e3e3e3;
+  --light-color: #f8f8f8;
+  --dark-color: var(--b-txt);
+
+  /* bamboo.css overrides */
+  --b-font-main: Questrial Regular, sans-serif;
+
+	/* --b-txt: #2e3440; */
+	/* --b-bg-1: #fff; */
+	/* --b-bg-2: #eceff4; */
+	/* --b-line: #eceff4; */
+	--b-link: var(--primary-color);
+	/* --b-btn-bg: #242933; */
+	/* --b-btn-txt: #fff; */
+	/* --b-focus: #d8dee9; */
+}
+
+html,
+body {
+  background-color: var(--light-color);
+  height: 100%;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+body {
+  font-size: 1.2em;
+  max-width: unset;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 960px;
+}
+
+nav,
+.addendum {
+  background: var(--secondary-color);
+}
+
+h1,
+.subheading {
+  color: var(--primary-color);
+  font-family: Lemon Milk Regular, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 1rem 0 0.2rem;
+  text-shadow: 1px 1px 0 var(--primary-color-50),
+    2px 2px 0 var(--primary-color-50),
+    3px 3px 0 var(--primary-color-50),
+    4px 4px 0 var(--primary-color-50);
+}
+
+h1 a,
+h1 a:link,
+h1 a:visited,
+h1 a:hover,
+h1 a:focus,
+h1 a:active {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+nav {
+  padding: 1em 0;
+}
+
+.horizontal-buttons {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav .horizontal-buttons {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.horizontal-buttons li {
+  margin: 0 1rem 1rem 0;
+}
+
+nav .horizontal-buttons li {
+  margin: 0 1rem 1rem;
+}
+
+.horizontal-buttons a {
+  background: var(--light-color);
+  border-radius: 3px;
+  display: block;
+  padding: 0.4em 1.2em;
+  transition: all 0.1s ease-in-out;
+}
+
+.horizontal-buttons.light-bg a {
+  background: var(--secondary-color);
+}
+
+.horizontal-buttons a,
+.horizontal-buttons a:link,
+.horizontal-buttons a:hover,
+.horizontal-buttons a:focus,
+.horizontal-buttons a:active {
+  text-decoration: none;
+}
+
+.horizontal-buttons a:hover,
+.horizontal-buttons a:focus {
+  box-shadow: 3px 3px 0 var(--primary-color-50);
+  color: var(--dark-color);
+  transform: translate(-3px, -3px);
+}
+
+.horizontal-buttons a:active {
+  box-shadow: none;
+  color: var(--dark-color);
+  transform: none;
+}
+
+.actors {
+  display: flex;
+  margin: 0 0 2em;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.actors li {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 512px) {
+  .actors li {
+    margin-left: 0;
+  }
+}
+
+.actors li a {
+  align-items: center;
+  display: flex;
+  font-size: 1.2em;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.actors li a:hover {
+  background: var(--secondary-color);
+}
+
+.actors img {
+  height: 250px;
+  margin-bottom: 0.4rem;
+  object-fit: cover;
+  width: 200px;
+}
+
+/* Actor page */
+
+.actor section {
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+.actor section aside {
+  width: 50%;
+}
+
+.actor section aside:first-child {
+  padding-right: 1em;
+}
+
+.resume-container {
+  background: var(--secondary-color);
+  padding: 10px;
+  width: 100%;
+}
+
+.actor canvas {
+  min-height: 10px;
+  width: 100%;
+}
+
+.addendum {
+  margin-top: 2em;
+  padding: 1em 0;
+}
+
+.addendum ul {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  background: var(--primary-color);
+  color: var(--light-color);
+  padding: 1em 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: var(--light-color);
+}

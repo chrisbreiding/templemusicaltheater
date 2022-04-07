@@ -1,0 +1,64 @@
+---
+layout: default
+title: Temple Musical Theater
+description: Temple University BFA Showcase 2022 | Musical Theater | Philadelphia
+path: home
+---
+
+<main>
+  <section class="container">
+    <h2>{{home.heading1}}</h2>
+    <p>{{home.content1 | linebreaks | safe}}</p>
+    <img src="/static/img/banner.jpg" />
+
+    <h2 id="class-of">{{home.heading2}}</h2>
+    <p>{{home.content2 | linebreaks | safe}}</p>
+
+    <ul class="actors">
+      {% for actor in actors.actors %}
+        <li>
+          <a href="actors/{{actor | full_name | slugify}}/">
+            <img src="/static/media/{{actor.photo_small}}" />
+            <caption>{{actor | full_name}}</caption>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="download" class="container">
+    <p>{{home.content3 | linebreaks | safe}}</p>
+    <ul class="horizontal-buttons light-bg">
+      <li>
+        <a href="/static/media/TempleBFA2022-Headshots-Resumes.zip" download>
+          {{home.download_text}}
+        </a>
+      </li>
+      <li>
+        <a href="{{home.videos_url}}" target="_blank" rel="no-referrer">
+          {{home.videos_text}}
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="addendum">
+    <div class="container">
+      <p>{{general.department_website_text}}</p>
+      <ul class="instagram horizontal-buttons">
+          <li>
+            <a href="{{general.department_website_url}}">
+              {{general.department_website_url}}
+            </a>
+          </li>
+      </ul>
+
+      <p>{{general.instagram_text}}</p>
+      <ul class="instagram horizontal-buttons">
+        {% for account in general.instagram_accounts %}
+          <li><a href="{{account.url}}">{{account.text}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</main>

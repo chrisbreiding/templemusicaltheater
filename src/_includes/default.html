@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <title>{{title}}</title>
+    {% if description %}
+      <meta name="description" content="{{description}}"/>
+    {% endif %}
+    {% block head %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/static/css/bamboo.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+  </head>
+  <body>
+    {% include "./partials/header.html" %}
+
+    {{ content | safe }}
+
+    {% include "./partials/footer.html" %}
+
+    {% if path == "home" %}
+      <!-- Netlify Identity Widget -->
+      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
+  </body>
+</html>

@@ -1,0 +1,70 @@
+# Use local backend
+# backend:
+#   name: proxy
+#   proxy_url: http://localhost:8081/api/v1
+# local_backend: true
+
+# Use netlify identity as backend
+backend:
+  name: git-gateway
+
+media_folder: "src/static/media"
+public_folder: "/static/media"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+# publish_mode: editorial_workflow
+collections:
+  - label: "Content"
+    name: "content"
+    editor:
+      preview: false
+    files:
+      - label: "General"
+        name: "general"
+        file: "src/_data/general.json"
+        fields:
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Department Website Text", name: "department_website_text", widget: "string" }
+          - { label: "Department Website URL", name: "department_website_url", widget: "string" }
+          - { label: "Instagram Text", name: "instagram_text", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string" }
+          - label: Instagram Accounts
+            name: instagram_accounts
+            widget: list
+            allow_add: true
+            collapsed: false
+            fields:
+              - { label: Text, name: text, widget: string }
+              - { label: URL, name: url, widget: string }
+      - label: "Home"
+        name: "home"
+        file: "src/_data/home.json"
+        fields:
+          - { label: "Heading 1", name: heading1, widget: string }
+          - { label: "Content 1", name: content1, widget: string }
+          - { label: "Heading 2", name: heading2, widget: string }
+          - { label: "Content 2", name: content2, widget: string }
+          - { label: "Content 3", name: content3, widget: string }
+          - { label: "Download Text", name: download_text, widget: string }
+          - { label: "Videos Text", name: videos_text, widget: string }
+          - { label: "Videos URL", name: videos_url, widget: string }
+      - label: "Actors"
+        name: "actors"
+        file: "src/_data/actors.json"
+        fields:
+          - label: Actors
+            name: actors
+            widget: list
+            allow_add: true
+            collapsed: true
+            fields:
+              - { label: "First Name", name: "first_name", widget: "string" }
+              - { label: "Last Name", name: "last_name", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Website", name: "website", widget: "string" }
+              - { label: "YouTube Video URL", name: "video", widget: "string" }
+              - { label: "Photo (original)", name: "photo_original", widget: "image" }
+              - { label: "Photo (480px wide)", name: "photo_large", widget: "image" }
+              - { label: "Photo (200px x 250px)", name: "photo_small", widget: "image" }
+              - { label: "Resume", name: "resume", widget: "file" }

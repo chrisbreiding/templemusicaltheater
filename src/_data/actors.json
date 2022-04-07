@@ -1,0 +1,137 @@
+{
+  "actors": [
+    {
+      "first_name": "Joshua",
+      "last_name": "Battisti",
+      "email": "battisjo18@gmail.com",
+      "photo_small": "JoshuaBattisti-small.jpg",
+      "photo_large": "JoshuaBattisti-large.jpg",
+      "photo_original": "JoshuaBattisti-Headshot.jpg",
+      "resume": "JoshuaBattisti-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Charlie",
+      "last_name": "Bensinger",
+      "email": "bensingercharlie@gmail.com",
+      "photo_small": "CharlieBensinger-small.jpg",
+      "photo_large": "CharlieBensinger-large.jpg",
+      "photo_original": "CharlieBensinger-Headshot.jpg",
+      "resume": "CharlieBensinger-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Trevor",
+      "last_name": "Blood",
+      "email": "trevorb5750@gmail.com",
+      "photo_small": "TrevorBlood-small.jpg",
+      "photo_large": "TrevorBlood-large.jpg",
+      "photo_original": "TrevorBlood-Headshot.jpg",
+      "resume": "TrevorBlood-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Jordan",
+      "last_name": "Chall",
+      "email": "jordanchall@yahoo.com",
+      "photo_small": "JordanChall-small.jpg",
+      "photo_large": "JordanChall-large.jpg",
+      "photo_original": "JordanChall-Headshot.jpg",
+      "resume": "JordanChall-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Sebastien",
+      "last_name": "Diaquoi",
+      "email": "Sebastien.Diaquoi@gmail.com",
+      "photo_small": "SebastienDiaquoi-small.jpg",
+      "photo_large": "SebastienDiaquoi-large.jpg",
+      "photo_original": "SebastienDiaquoi-Headshot.jpg",
+      "resume": "SebastienDiaquoi-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Baird",
+      "last_name": "Erb",
+      "email": "Bairdybud@gmail.com",
+      "photo_small": "BairdErb-small.jpg",
+      "photo_large": "BairdErb-large.jpg",
+      "photo_original": "BairdErb-Headshot.jpg",
+      "resume": "BairdErb-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Nick",
+      "last_name": "Erholm",
+      "email": "erholmnick@gmail.com",
+      "website": "https://www.nickerholm.com",
+      "photo_small": "NickErholm-small.jpg",
+      "photo_large": "NickErholm-large.jpg",
+      "photo_original": "NickErholm-Headshot.jpg",
+      "resume": "NickErholm-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Lauren",
+      "last_name": "Esser",
+      "email": "laurenesser1099@gmail.com",
+      "website": "https://laurenesser.com",
+      "photo_small": "LaurenEsser-small.jpg",
+      "photo_large": "LaurenEsser-large.jpg",
+      "photo_original": "LaurenEsser-Headshot.jpg",
+      "resume": "LaurenEsser-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Melissa",
+      "last_name": "Foreman",
+      "email": "melissaforeman10@gmail.com",
+      "photo_small": "MelissaForeman-small.jpg",
+      "photo_large": "MelissaForeman-large.jpg",
+      "photo_original": "MelissaForeman-Headshot.jpg",
+      "resume": "MelissaForeman-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Isabel",
+      "last_name": "Hartzell",
+      "email": "isyhartzell@gmail.com",
+      "website": "https://www.isabelhartzell.com",
+      "photo_small": "IsabelHartzell-small.jpg",
+      "photo_large": "IsabelHartzell-large.jpg",
+      "photo_original": "IsabelHartzell-Headshot.jpg",
+      "resume": "IsabelHartzell-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Jordan",
+      "last_name": "Hayes",
+      "email": "jkhayes000@gmail.com",
+      "photo_small": "JordanHayes-small.jpg",
+      "photo_large": "JordanHayes-large.jpg",
+      "photo_original": "JordanHayes-Headshot.jpg",
+      "resume": "JordanHayes-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Zoe",
+      "last_name": "Hunchak",
+      "email": "zoe.hunchak831@gmail.com",
+      "photo_small": "ZoeHunchak-small.jpg",
+      "photo_large": "ZoeHunchak-large.jpg",
+      "photo_original": "ZoeHunchak-Headshot.jpg",
+      "resume": "ZoeHunchak-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    },
+    {
+      "first_name": "Caitlin",
+      "last_name": "Navarrete",
+      "email": "cnavarrete320@gmail.com",
+      "photo_small": "CaitlinNavarrete-small.jpg",
+      "photo_large": "CaitlinNavarrete-large.jpg",
+      "photo_original": "CaitlinNavarrete-Headshot.jpg",
+      "resume": "CaitlinNavarrete-Resume.pdf",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+    }
+  ]
+}

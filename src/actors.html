@@ -1,0 +1,64 @@
+---
+layout: default
+pagination:
+    data: actors.actors
+    size: 1
+    alias: actor
+title: "{{ actor | full_name}}"
+permalink: "actors/{{ actor | full_name | slugify }}/"
+---
+
+<main class="actor container">
+  <h2>{{actor | full_name}}</h2>
+  <ul class="horizontal-buttons light-bg">
+    <li><a href="mailto:{{actor.email}}">Contact</a></li>
+    {% if website %}<li><a href="{{actor.website}}" target="_blank" rel="no-referrer">Website</a></li>{% endif %}
+    <li><a href="/static/media/{{actor.photo_original}}" download>Download Headshot</a></li>
+    <li><a href="/static/media/{{actor.resume}}" download>Download Resume</a></li>
+  </ul>
+
+  <section>
+    <aside>
+      <img src="/static/media//{{actor.photo_large}}" />
+    </aside>
+    <aside>
+      <div class="resume-container">
+        <canvas id="resume-canvas"></canvas>
+      </div>
+    </aside>
+  </section>
+  <section>
+    <iframe width="979" height="550" src="{{actor.video}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.13.216/pdf.min.js" integrity="sha512-IM60GPudO4jk+ZQm3UlJgKHhXQi5pNDM6mP+pLKL968YgkHMc7He3aGJOVHEZ9rJ4vAaEtJ8W6SKa7Qq4inzBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  (function () {
+    pdfjsLib.getDocument('/static/media/{{actor.resume}}').promise
+    .then((pdf) => {
+      return pdf.getPage(1);
+    })
+    .then((page) => {
+      const canvas = document.getElementById('resume-canvas');
+      const originalViewport = page.getViewport({ scale: 1 });
+      const viewport = page.getViewport({ scale: canvas.clientWidth / originalViewport.width });
+      const outputScale = window.devicePixelRatio || 1;
+
+      canvas.width = Math.floor(viewport.width * outputScale);
+      canvas.height = Math.floor(viewport.height * outputScale);
+      canvas.style.width = Math.floor(viewport.width) + "px";
+      canvas.style.height =  Math.floor(viewport.height) + "px";
+
+      const transform = outputScale !== 1
+        ? [outputScale, 0, 0, outputScale, 0, 0]
+        : null;
+
+      page.render({
+        canvasContext: canvas.getContext('2d'),
+        transform,
+        viewport,
+      });
+    });
+  }());
+</script>
