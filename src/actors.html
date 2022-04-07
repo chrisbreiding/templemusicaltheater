@@ -4,8 +4,9 @@ pagination:
     data: actors.actors
     size: 1
     alias: actor
-title: "{{ actor | full_name}}"
 permalink: "actors/{{ actor | full_name | slugify }}/"
+renderData:
+  title: "{{ actor | full_name}}"
 ---
 
 <main class="actor container">
