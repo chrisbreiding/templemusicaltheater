@@ -89,7 +89,7 @@ h1 a:active {
 }
 
 nav {
-  padding: 1em 0;
+  padding: 1rem 0;
 }
 
 .horizontal-buttons {
@@ -110,7 +110,7 @@ nav .horizontal-buttons {
 }
 
 nav .horizontal-buttons li {
-  margin: 0 1rem 1rem;
+  margin: 0 1rem;
 }
 
 .horizontal-buttons a {
@@ -167,15 +167,26 @@ nav .horizontal-buttons li {
 
 .actors li a {
   align-items: center;
+  border-radius: 3px;
   display: flex;
   font-size: 1.2em;
   flex-direction: column;
   justify-content: space-between;
   padding: 12px;
+  transition: all 0.1s ease-in-out;
 }
 
 .actors li a:hover {
   background: var(--secondary-color);
+  box-shadow: 3px 3px 0 var(--primary-color-50);
+  color: var(--dark-color);
+  transform: translate(-3px, -3px);
+}
+
+.actors li a:active {
+  box-shadow: none;
+  color: var(--dark-color);
+  transform: none;
 }
 
 .actors img {
