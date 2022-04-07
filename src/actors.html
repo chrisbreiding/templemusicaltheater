@@ -4,23 +4,23 @@ pagination:
     data: actors.actors
     size: 1
     alias: actor
-permalink: "actors/{{ actor | full_name | slugify }}/"
+permalink: "actors/{{actor | full_name | slugify }}/"
 renderData:
-  title: "{{ actor | full_name}}"
+  title: "{{actor | full_name}}"
 ---
 
 <main class="actor container">
   <h2>{{actor | full_name}}</h2>
   <ul class="horizontal-buttons light-bg">
     <li><a href="mailto:{{actor.email}}">Contact</a></li>
-    {% if website %}<li><a href="{{actor.website}}" target="_blank" rel="no-referrer">Website</a></li>{% endif %}
+    {% if actor.website %}<li><a href="{{actor.website}}" target="_blank" rel="noopener noreferrer">Website</a></li>{% endif %}
     <li><a href="/static/media/{{actor.photo_original}}" download>Download Headshot</a></li>
     <li><a href="/static/media/{{actor.resume}}" download>Download Resume</a></li>
   </ul>
 
   <section>
     <aside>
-      <img src="/static/media//{{actor.photo_large}}" alt="{{ actor | full_name}} headshot" />
+      <img src="/static/media//{{actor.photo_large}}" alt="{{actor | full_name}} headshot" />
     </aside>
     <aside>
       <div class="resume-container">

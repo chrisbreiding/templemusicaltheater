@@ -18,7 +18,7 @@ path: home
       {% for actor in actors.actors %}
         <li>
           <a href="actors/{{actor | full_name | slugify}}/">
-            <img src="/static/media/{{actor.photo_small}}" alt="{{ actor | full_name}} headshot"/>
+            <img src="/static/media/{{actor.photo_small}}" alt="{{actor | full_name}} headshot"/>
             <caption>{{actor | full_name}}</caption>
           </a>
         </li>
@@ -35,7 +35,7 @@ path: home
         </a>
       </li>
       <li>
-        <a href="{{home.videos_url}}" target="_blank" rel="no-referrer">
+        <a href="{{home.videos_url}}" target="_blank" rel="noopener noreferrer">
           {{home.videos_text}}
         </a>
       </li>
@@ -47,7 +47,7 @@ path: home
       <p>{{general.department_website_text}}</p>
       <ul class="instagram horizontal-buttons">
           <li>
-            <a href="{{general.department_website_url}}">
+            <a href="{{general.department_website_url}}" target="_blank" rel="noopener noreferrer">
               {{general.department_website_url}}
             </a>
           </li>
@@ -56,7 +56,7 @@ path: home
       <p>{{general.instagram_text}}</p>
       <ul class="instagram horizontal-buttons">
         {% for account in general.instagram_accounts %}
-          <li><a href="{{account.url}}">{{account.text}}</a></li>
+          <li><a href="{{account.url}}" target="_blank" rel="noopener noreferrer">{{account.text}}</a></li>
         {% endfor %}
       </ul>
     </div>
