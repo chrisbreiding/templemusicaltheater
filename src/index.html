@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Temple Musical Theater
-description: Temple University BFA Showcase 2022 | Musical Theater | Philadelphia
-path: home
+renderData:
+  title: "{{home.site_title}}"
+  description: "{{home.site_description}}"
 ---
 
 <main>
   <section class="container">
     <h2>{{home.heading1}}</h2>
     <p>{{home.content1 | linebreaks | safe}}</p>
-    <img src="/static/img/banner.jpg" />
+    <img src="/static/img/{{home.hero_image}}" />
 
     <h2 id="class-of">{{home.heading2}}</h2>
     <p>{{home.content2 | linebreaks | safe}}</p>

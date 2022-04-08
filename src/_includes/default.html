@@ -10,10 +10,9 @@
     {% else %}
       <title>{{title}}</title>
     {% endif %}
-    {% if description %}
-      <meta name="description" content="{{description}}"/>
+    {% if renderData.description %}
+      <meta name="description" content="{{renderData.description}}"/>
     {% endif %}
-    {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/bamboo.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
   </head>
@@ -23,10 +22,5 @@
     {{ content | safe }}
 
     {% include "./partials/footer.html" %}
-
-    {% if path == "home" %}
-      <!-- Netlify Identity Widget -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    {% endif %}
   </body>
 </html>

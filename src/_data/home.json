@@ -1,6 +1,9 @@
 {
+  "site_title": "Temple Musical Theater",
+  "site_description": "Temple University BFA Showcase 2022 | Musical Theater | Philadelphia",
   "heading1": "Welcome to our Virtual Showcase!",
   "content1": "Scroll down to find individual artists' video performances, headshots, resumés, and contacts.\\nThank you for viewing and for your consideration for future projects and representation.\\nTo request a virtual meeting, please feel free to reach out via the contact button on each actor's page.",
+  "hero_image": "banner.jpg",
   "heading2": "Class of 2022",
   "content2": "Click on a headshot below to see the video performance, headshot, and resumé of each artist.",
   "content3": "If you would prefer to download all the actors' headshots and resumes at once for contact information, please click button below for a zip file.",
