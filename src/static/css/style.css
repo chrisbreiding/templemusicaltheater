@@ -12,26 +12,25 @@
   --primary-color: #a41e35;
   --primary-color-50: #C47988;
   --primary-color-25: #E1BAC1;
-  --secondary-color: #e3e3e3;
+  --secondary-color: #2e3440;
   --light-color: #f8f8f8;
-  --dark-color: var(--b-txt);
+  --secondary-light-color: #f8f8f8;
+  --dark-color: #2e3440;
 
   /* bamboo.css overrides */
   --b-font-main: Questrial Regular, sans-serif;
-
-	/* --b-txt: #2e3440; */
-	/* --b-bg-1: #fff; */
-	/* --b-bg-2: #eceff4; */
-	/* --b-line: #eceff4; */
-	--b-link: var(--primary-color);
-	/* --b-btn-bg: #242933; */
-	/* --b-btn-txt: #fff; */
-	/* --b-focus: #d8dee9; */
+	--b-txt: var(--light-color);
+	--b-bg-1: var(--primary-color);
+	--b-bg-2: var(--secondary-color);
+	--b-line: var(--secondary-color);
+	--b-link: var(--light-color);
+	--b-btn-bg: var(--light-color);
+	--b-btn-txt: var(--primary-color);
+	--b-focus: var(--primary-color-50);
 }
 
 html,
 body {
-  background-color: var(--light-color);
   height: 100%;
   scroll-behavior: smooth;
   width: 100%;
@@ -55,19 +54,13 @@ nav,
 
 h1,
 .subheading {
-  color: var(--primary-color);
+  color: var(--light-color);
   font-family: Lemon Milk Regular, sans-serif;
   text-align: center;
 }
 
 h1 {
-  font-size: 2.2rem;
-  letter-spacing: 2px;
-  margin: 1rem 0 0.2rem;
-  text-shadow: 1px 1px 0 var(--primary-color-50),
-    2px 2px 0 var(--primary-color-50),
-    3px 3px 0 var(--primary-color-50),
-    4px 4px 0 var(--primary-color-50);
+  margin: 1rem 0 0;
 }
 
 h1 a,
@@ -76,23 +69,35 @@ h1 a:visited,
 h1 a:hover,
 h1 a:focus,
 h1 a:active {
-  color: var(--primary-color);
+  color: var(--light-color);
+  display: block;
   text-decoration: none;
 }
 
+.heading {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.2rem;
+  text-shadow: 1px 1px 0 var(--primary-color-50),
+    2px 2px 0 var(--primary-color-50),
+    3px 3px 0 var(--primary-color-50),
+    4px 4px 0 var(--primary-color-50);
+}
+
 .subheading {
+  display: block;
   font-size: 1rem;
   line-height: 1.4;
   margin: 0 0 1rem;
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 630px) {
   body {
     font-size: 1.2em;
   }
 
-  h1 {
+  .heading {
     font-size: 3rem;
   }
 
@@ -129,13 +134,14 @@ nav .horizontal-buttons li {
 .horizontal-buttons a {
   background: var(--light-color);
   border-radius: 3px;
+  color: var(--primary-color);
   display: block;
   padding: 0.4em 1.2em;
   transition: all 0.1s ease-in-out;
 }
 
 .horizontal-buttons.light-bg a {
-  background: var(--secondary-color);
+  background: var(--secondary-light-color);
 }
 
 .horizontal-buttons a,
@@ -148,9 +154,9 @@ nav .horizontal-buttons li {
 
 .horizontal-buttons a:hover,
 .horizontal-buttons a:focus {
-  box-shadow: 3px 3px 0 var(--primary-color-50);
+  box-shadow: 0 3px 0 var(--primary-color-50);
   color: var(--dark-color);
-  transform: translate(-3px, -3px);
+  transform: translate(0, -3px);
 }
 
 .horizontal-buttons a:active {
@@ -182,18 +188,20 @@ nav .horizontal-buttons li {
   align-items: center;
   border-radius: 3px;
   display: flex;
+  color: var(--light-color);
   font-size: 1.2em;
   flex-direction: column;
   justify-content: space-between;
   padding: 12px;
+  text-decoration: none;
   transition: all 0.1s ease-in-out;
 }
 
 .actors li a:hover {
-  background: var(--secondary-color);
-  box-shadow: 3px 3px 0 var(--primary-color-50);
+  background: var(--secondary-light-color);
+  box-shadow: 0 3px 0 var(--primary-color-50);
   color: var(--dark-color);
-  transform: translate(-3px, -3px);
+  transform: translate(0, -3px);
 }
 
 .actors li a:active {
@@ -233,7 +241,8 @@ nav .horizontal-buttons li {
 
 .resume-container {
   background: var(--secondary-color);
-  padding: 10px;
+  line-height: 1;
+  padding: 10px 10px 7px;
   width: 100%;
 }
 
