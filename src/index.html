@@ -1,8 +1,8 @@
 ---
 layout: default
 renderData:
-  title: "{{home.site_title}}"
-  description: "{{home.site_description}}"
+  title: "{{home.meta_title}}"
+  description: "{{home.meta_description}}"
 ---
 
 <main>
@@ -44,18 +44,18 @@ renderData:
 
   <section class="addendum">
     <div class="container">
-      <p>{{general.department_website_text}}</p>
+      <p>{{home.department_website_text}}</p>
       <ul class="instagram horizontal-buttons">
           <li>
-            <a href="{{general.department_website_url}}" target="_blank" rel="noopener noreferrer">
-              {{general.department_website_url}}
+            <a href="{{home.department_website_url}}" target="_blank" rel="noopener noreferrer">
+              {{home.department_website_url}}
             </a>
           </li>
       </ul>
 
-      <p>{{general.instagram_text}}</p>
+      <p>{{home.instagram_text}}</p>
       <ul class="instagram horizontal-buttons">
-        {% for account in general.instagram_accounts %}
+        {% for account in home.instagram_accounts %}
           <li><a href="{{account.url}}" target="_blank" rel="noopener noreferrer">{{account.text}}</a></li>
         {% endfor %}
       </ul>

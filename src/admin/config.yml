@@ -19,12 +19,28 @@ collections:
     editor:
       preview: false
     files:
-      - label: "General"
-        name: "general"
-        file: "src/_data/general.json"
+      - label: "Site"
+        name: "site"
+        file: "src/_data/site.json"
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
+          - { label: "Footer Text", name: "footer_text", widget: "string" }
+      - label: "Home"
+        name: "home"
+        file: "src/_data/home.json"
+        fields:
+          - { label: "Meta Title", name: "meta_title", widget: "string" }
+          - { label: "Meta Description", name: "meta_description", widget: "string" }
+          - { label: "Heading 1", name: heading1, widget: string }
+          - { label: "Content 1", name: content1, widget: string }
+          - { label: "Hero Image", name: hero_image, widget: image }
+          - { label: "Heading 2", name: heading2, widget: string }
+          - { label: "Content 2", name: content2, widget: string }
+          - { label: "Content 3", name: content3, widget: string }
+          - { label: "Download Text", name: download_text, widget: string }
+          - { label: "Videos Text", name: videos_text, widget: string }
+          - { label: "Videos URL", name: videos_url, widget: string }
           - { label: "Department Website Text", name: "department_website_text", widget: "string" }
           - { label: "Department Website URL", name: "department_website_url", widget: "string" }
           - { label: "Instagram Text", name: "instagram_text", widget: "string" }
@@ -36,19 +52,6 @@ collections:
             fields:
               - { label: Text, name: text, widget: string }
               - { label: URL, name: url, widget: string }
-          - { label: "Footer Text", name: "footer_text", widget: "string" }
-      - label: "Home"
-        name: "home"
-        file: "src/_data/home.json"
-        fields:
-          - { label: "Heading 1", name: heading1, widget: string }
-          - { label: "Content 1", name: content1, widget: string }
-          - { label: "Heading 2", name: heading2, widget: string }
-          - { label: "Content 2", name: content2, widget: string }
-          - { label: "Content 3", name: content3, widget: string }
-          - { label: "Download Text", name: download_text, widget: string }
-          - { label: "Videos Text", name: videos_text, widget: string }
-          - { label: "Videos URL", name: videos_url, widget: string }
       - label: "Actors"
         name: "actors"
         file: "src/_data/actors.json"
