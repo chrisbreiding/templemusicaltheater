@@ -4,6 +4,7 @@
 
 - [Netlify CMS](https://www.netlifycms.org/)
 - [Eleventy](https://www.11ty.dev/)
+- [git lfs](https://git-lfs.github.com/) for large media files
 
 ## Getting Started
 
