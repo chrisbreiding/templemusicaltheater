@@ -17,12 +17,16 @@ function renderResumeToCanvas (resumePath, pageNumber) {
   });
 
   function getFirstPdfPage () {
-    return pdfjsLib.getDocument(resumePath).promise.then((pdf) => pdf.getPage(pageNumber ? Number(pageNumber) : 1))
+    return pdfjsLib.getDocument(resumePath).promise.then((pdf) => {
+      return pdf.getPage(pageNumber ? Number(pageNumber) : 1)
+    })
   }
 
   function renderPageToCanvas (page) {
     const originalViewport = page.getViewport({ scale: 1 });
-    const viewport = page.getViewport({ scale: canvasWrapper.clientWidth / originalViewport.width });
+    const viewport = page.getViewport({
+      scale: canvasWrapper.clientWidth / originalViewport.width
+    });
     const outputScale = window.devicePixelRatio || 1;
 
     canvas.width = Math.floor(viewport.width * outputScale);
@@ -41,7 +45,7 @@ function renderResumeToCanvas (resumePath, pageNumber) {
     });
   }
 
-  function debounce({ onStart, onEnd, timeout = 300 }){
+  function debounce({ onStart, onEnd, timeout = 300 }) {
     let timer;
     let calledStart = false;
 
