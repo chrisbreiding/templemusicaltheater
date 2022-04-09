@@ -14,20 +14,20 @@ public_folder: "/static/media"
 # Please run "npx netlify-cms-proxy-server" for local backend
 # publish_mode: editorial_workflow
 collections:
-  - label: "Content"
-    name: "content"
+  - name: content
+    label: Content
     editor:
       preview: false
     files:
-      - label: "Site"
-        name: "site"
+      - name: site
+        label: Site
         file: "src/_data/site.json"
         fields:
           - { label: "Heading", name: "heading", widget: "string" }
           - { label: "Subheading", name: "subheading", widget: "string" }
           - { label: "Footer Text", name: "footer_text", widget: "string" }
-      - label: "Home"
-        name: "home"
+      - name: home
+        label: Home
         file: "src/_data/home.json"
         fields:
           - { label: "Meta Title", name: "meta_title", widget: "string" }
@@ -52,12 +52,15 @@ collections:
             fields:
               - { label: Text, name: text, widget: string }
               - { label: URL, name: url, widget: string }
-      - label: "Actors"
-        name: "actors"
+      - name: actors
+        label: Actors
+        label_singular: Actor
         file: "src/_data/actors.json"
         fields:
-          - label: Actors
-            name: actors
+          - name: actors
+            label: Actors
+            label_singular: Actor
+            summary: "{{first_name}} {{last_name}}"
             widget: list
             allow_add: true
             collapsed: true
@@ -65,7 +68,7 @@ collections:
               - { label: "First Name", name: "first_name", widget: "string" }
               - { label: "Last Name", name: "last_name", widget: "string" }
               - { label: "Email", name: "email", widget: "string" }
-              - { label: "Website", name: "website", widget: "string" }
+              - { label: "Website", name: "website", widget: "string", required: false }
               - { label: "YouTube Video URL", name: "video", widget: "string" }
               - { label: "Photo (original)", name: "photo_original", widget: "image" }
               - { label: "Photo (480px wide)", name: "photo_large", widget: "image" }
