@@ -17,7 +17,7 @@
       "photo_small": "CharlieBensinger-small.jpg",
       "photo_large": "CharlieBensinger-large.jpg",
       "photo_original": "CharlieBensinger-Headshot.jpg",
-      "resume": "CharlieBensinger-Resume.pdf",
+      "resume": "/static/media/charliebensinger-resume.pdf",
       "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
     },
     {
@@ -61,26 +61,26 @@
       "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
     },
     {
-      "first_name": "Nick",
-      "last_name": "Erholm",
-      "email": "erholmnick@gmail.com",
-      "website": "https://www.nickerholm.com",
-      "photo_small": "NickErholm-small.jpg",
-      "photo_large": "NickErholm-large.jpg",
-      "photo_original": "NickErholm-Headshot.jpg",
       "resume": "NickErholm-Resume.pdf",
-      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+      "photo_large": "NickErholm-large.jpg",
+      "last_name": "Erholm",
+      "photo_small": "NickErholm-small.jpg",
+      "first_name": "Nick",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0",
+      "website": "https://www.nickerholm.com",
+      "email": "erholmnick@gmail.com",
+      "photo_original": "NickErholm-Headshot.jpg"
     },
     {
-      "first_name": "Lauren",
-      "last_name": "Esser",
-      "email": "laurenesser1099@gmail.com",
-      "website": "https://laurenesser.com",
-      "photo_small": "LaurenEsser-small.jpg",
-      "photo_large": "LaurenEsser-large.jpg",
-      "photo_original": "LaurenEsser-Headshot.jpg",
       "resume": "LaurenEsser-Resume.pdf",
-      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+      "photo_large": "LaurenEsser-large.jpg",
+      "last_name": "Esser",
+      "photo_small": "LaurenEsser-small.jpg",
+      "first_name": "Lauren",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0",
+      "website": "https://laurenesser.com",
+      "email": "laurenesser1099@gmail.com",
+      "photo_original": "LaurenEsser-Headshot.jpg"
     },
     {
       "first_name": "Melissa",
@@ -93,15 +93,15 @@
       "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
     },
     {
-      "first_name": "Isabel",
-      "last_name": "Hartzell",
-      "email": "isyhartzell@gmail.com",
-      "website": "https://www.isabelhartzell.com",
-      "photo_small": "IsabelHartzell-small.jpg",
-      "photo_large": "IsabelHartzell-large.jpg",
-      "photo_original": "IsabelHartzell-Headshot.jpg",
       "resume": "IsabelHartzell-Resume.pdf",
-      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+      "photo_large": "IsabelHartzell-large.jpg",
+      "last_name": "Hartzell",
+      "photo_small": "IsabelHartzell-small.jpg",
+      "first_name": "Isabel",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0",
+      "website": "https://www.isabelhartzell.com",
+      "email": "isyhartzell@gmail.com",
+      "photo_original": "IsabelHartzell-Headshot.jpg"
     },
     {
       "first_name": "Jordan",
