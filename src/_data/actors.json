@@ -41,14 +41,15 @@
       "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
     },
     {
-      "first_name": "Sebastien",
-      "last_name": "Diaquoi",
-      "email": "Sebastien.Diaquoi@gmail.com",
-      "photo_small": "SebastienDiaquoi-small.jpg",
-      "photo_large": "SebastienDiaquoi-large.jpg",
-      "photo_original": "SebastienDiaquoi-Headshot.jpg",
       "resume": "SebastienDiaquoi-Resume.pdf",
-      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+      "photo_large": "SebastienDiaquoi-large.jpg",
+      "last_name": "Diaquoi",
+      "photo_small": "SebastienDiaquoi-small.jpg",
+      "first_name": "Sebastien",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0",
+      "website": "https://sebastiendiaquoi.com/",
+      "email": "Sebastien.Diaquoi@gmail.com",
+      "photo_original": "SebastienDiaquoi-Headshot.jpg"
     },
     {
       "first_name": "Baird",
@@ -83,14 +84,15 @@
       "photo_original": "LaurenEsser-Headshot.jpg"
     },
     {
-      "first_name": "Melissa",
-      "last_name": "Foreman",
-      "email": "melissaforeman10@gmail.com",
-      "photo_small": "MelissaForeman-small.jpg",
-      "photo_large": "MelissaForeman-large.jpg",
-      "photo_original": "MelissaForeman-Headshot.jpg",
       "resume": "MelissaForeman-Resume.pdf",
-      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+      "photo_large": "MelissaForeman-large.jpg",
+      "last_name": "Foreman",
+      "photo_small": "MelissaForeman-small.jpg",
+      "first_name": "Melissa",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0",
+      "website": "https://www.melissalforeman.com/",
+      "email": "melissaforeman10@gmail.com",
+      "photo_original": "MelissaForeman-Headshot.jpg"
     },
     {
       "resume": "IsabelHartzell-Resume.pdf",
@@ -124,14 +126,15 @@
       "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
     },
     {
-      "first_name": "Caitlin",
-      "last_name": "Navarrete",
-      "email": "cnavarrete320@gmail.com",
-      "photo_small": "CaitlinNavarrete-small.jpg",
-      "photo_large": "CaitlinNavarrete-large.jpg",
-      "photo_original": "CaitlinNavarrete-Headshot.jpg",
       "resume": "CaitlinNavarrete-Resume.pdf",
-      "video": "https://www.youtube.com/embed/IuCEXqFu2O0"
+      "photo_large": "CaitlinNavarrete-large.jpg",
+      "last_name": "Navarrete",
+      "photo_small": "CaitlinNavarrete-small.jpg",
+      "first_name": "Caitlin",
+      "video": "https://www.youtube.com/embed/IuCEXqFu2O0",
+      "website": "https://www.caitlinnavarrete.com/",
+      "email": "cnavarrete320@gmail.com",
+      "photo_original": "CaitlinNavarrete-Headshot.jpg"
     }
   ]
 }
