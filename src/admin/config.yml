@@ -7,6 +7,7 @@
 # Use netlify identity as backend
 backend:
   name: git-gateway
+  use_large_media_transforms_in_media_library: false
 
 media_folder: "src/static/media"
 public_folder: "/static/media"
