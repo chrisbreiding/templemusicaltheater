@@ -135,6 +135,16 @@
       "website": "https://www.caitlinnavarrete.com/",
       "email": "cnavarrete320@gmail.com",
       "photo_original": "CaitlinNavarrete-Headshot.jpg"
+    },
+    {
+      "first_name": "Stewart ",
+      "last_name": "Williams",
+      "email": "tuh14047@temple.edu",
+      "video": "https://youtu.be/IuCEXqFu2O0",
+      "photo_original": "/static/media/stewarttwilliams-headshot.jpg",
+      "photo_large": "/static/media/stewartt.williams-large.jpg",
+      "photo_small": "/static/media/stewarttwilliam-small.jpg",
+      "resume": "/static/media/stewarttwilliams-resume.pdf"
     }
   ]
 }
