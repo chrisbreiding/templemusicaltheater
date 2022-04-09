@@ -76,3 +76,4 @@ collections:
               - { label: "Photo (480px wide)", name: "photo_large", widget: "image" }
               - { label: "Photo (200px x 250px)", name: "photo_small", widget: "image" }
               - { label: "Resume", name: "resume", widget: "file" }
+              - { label: "Resume Page", name: "resume_page", widget: "number", default: 1, required: false }

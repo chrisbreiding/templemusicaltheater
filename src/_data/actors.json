@@ -75,6 +75,7 @@
     },
     {
       "resume": "/static/media/LaurenEsser-Resume.pdf",
+      "resume_page": 2,
       "photo_large": "/static/media/LaurenEsser-large.jpg",
       "last_name": "Esser",
       "photo_small": "/static/media/LaurenEsser-small.jpg",

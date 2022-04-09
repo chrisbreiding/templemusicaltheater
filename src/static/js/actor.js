@@ -1,4 +1,4 @@
-function renderResumeToCanvas (resumePath) {
+function renderResumeToCanvas (resumePath, pageNumber) {
   const canvas = document.getElementById('resume-canvas');
   const canvasWrapper = document.getElementById('resume-wrapper');
 
@@ -17,7 +17,7 @@ function renderResumeToCanvas (resumePath) {
   });
 
   function getFirstPdfPage () {
-    return pdfjsLib.getDocument(resumePath).promise.then((pdf) => pdf.getPage(1))
+    return pdfjsLib.getDocument(resumePath).promise.then((pdf) => pdf.getPage(pageNumber ? Number(pageNumber) : 1))
   }
 
   function renderPageToCanvas (page) {
