@@ -58,6 +58,7 @@ collections:
         label_singular: Actor
         file: "src/_data/actors.json"
         fields:
+          - { label: "Zip File", name: zip_file, widget: file }
           - name: actors
             label: Actors
             label_singular: Actor
