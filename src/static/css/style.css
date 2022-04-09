@@ -178,12 +178,6 @@ nav .horizontal-buttons li {
   padding: 0;
 }
 
-@media screen and (min-width: 512px) {
-  .actors li {
-    margin-left: 0;
-  }
-}
-
 .actors li a {
   align-items: center;
   border-radius: 3px;
