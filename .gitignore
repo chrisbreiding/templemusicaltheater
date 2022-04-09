@@ -6,6 +6,3 @@ node_modules/
 *git/
 .env
 *.log
-
-# Local Netlify folder
-.netlify
