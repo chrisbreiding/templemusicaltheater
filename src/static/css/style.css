@@ -48,6 +48,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 960px;
+  text-align: center;
 }
 
 nav {
@@ -78,6 +79,14 @@ h1 a:focus,
 h1 a:active {
   color: var(--light-color);
   text-decoration: none;
+}
+
+h2 {
+  margin: 2.7rem 0 2.2rem;
+}
+
+p {
+  line-height: 2.2;
 }
 
 .heading {
@@ -120,6 +129,7 @@ nav {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -240,6 +250,7 @@ iframe:focus {
 
 .actors img {
   height: 250px;
+  margin-bottom: 0.4rem;
   object-fit: cover;
   width: 200px;
 }
