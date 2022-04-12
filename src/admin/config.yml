@@ -34,12 +34,12 @@ collections:
           - { label: "Meta Title", name: "meta_title", widget: "string" }
           - { label: "Meta Description", name: "meta_description", widget: "string" }
           - { label: "Heading 1", name: heading1, widget: string }
-          - { label: "Content 1", name: content1, widget: string }
+          - { label: "Content 1", name: content1, widget: text }
           - { label: "Hero Image", name: hero_image, widget: image }
           - { label: "Video", name: video, widget: string }
           - { label: "Heading 2", name: heading2, widget: string }
-          - { label: "Content 2", name: content2, widget: string }
-          - { label: "Content 3", name: content3, widget: string }
+          - { label: "Content 2", name: content2, widget: text }
+          - { label: "Content 3", name: content3, widget: text }
           - { label: "Download Text", name: download_text, widget: string }
           - { label: "Videos Text", name: videos_text, widget: string }
           - { label: "Videos URL", name: videos_url, widget: string }
