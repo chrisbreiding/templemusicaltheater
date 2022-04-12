@@ -1,3 +1,6 @@
+site_url: https://templemusicaltheater.com
+logo_url: https://templemusicaltheater.com/static/img/temple-logo.svg
+
 # Use local backend
 # backend:
 #   name: proxy
