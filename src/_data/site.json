@@ -1,5 +1,22 @@
 {
   "heading": "Temple University",
   "subheading": "Musical Theater BFA Class of 2022",
- "footer_text": "Copyright © 2022 Temple Theaters, Temple University, Philadelphia, PA"
+  "footer_text": "Copyright © 2022 Temple Theaters, Temple University, Philadelphia, PA",
+  "navigation": [{
+    "text": "Home",
+    "url": "/",
+    "new_tab": false
+  }, {
+    "text": "Class of 2022",
+    "url": "/#class-of",
+    "new_tab": false
+  }, {
+    "text": "Download All",
+    "url": "/#download",
+    "new_tab": false
+    }, {
+    "text": "Full Video on YouTube",
+    "url": "https://youtu.be/sA02lY6OwnE",
+    "new_tab": true
+  }]
 }
