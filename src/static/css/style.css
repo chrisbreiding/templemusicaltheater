@@ -208,7 +208,7 @@ iframe:focus {
 
 .actors li {
   list-style: none;
-  margin: 0 auto;
+  margin: 0 auto 0.4rem;
   padding: 0;
 }
 
@@ -240,9 +240,26 @@ iframe:focus {
 
 .actors img {
   height: 250px;
-  margin-bottom: 0.4rem;
   object-fit: cover;
   width: 200px;
+}
+
+.actors .spacer {
+  display: none;
+  height: 274px;
+  width: 224px;
+}
+
+@media screen and (min-width: 736px) {
+  .actors .spacer-1 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .actors .spacer {
+    display: block;
+  }
 }
 
 /* Actor page */
