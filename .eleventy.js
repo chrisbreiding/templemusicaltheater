@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true)
 
   eleventyConfig.addFilter('linebreaks', (text) => {
-    return text.replace(/\\n/g, '<br />')
+    return text.replace(/\n/g, '<br />')
   })
 
   eleventyConfig.addFilter('full_name', (actor) => {
