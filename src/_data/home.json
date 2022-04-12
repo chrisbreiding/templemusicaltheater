@@ -1,13 +1,12 @@
 {
   "meta_description": "Temple University BFA Showcase 2022 | Musical Theater | Philadelphia",
   "download_text": "Download Temple class of 2022 zip file",
-  "video": "https://www.youtube.com/embed/QL2W7LgpmP8",
   "videos_url": "https://youtu.be/sA02lY6OwnE",
   "heading1": "Welcome to our Virtual Showcase!",
   "heading2": "Class of 2022",
   "instagram_accounts": [
     {
-      "text": "@TemplateTheaters",
+      "text": "@TempleTheaters",
       "url": "https://www.instagram.com/templetheaters/"
     },
     {
@@ -21,6 +20,7 @@
   "content2": "Click on a headshot below to see the video performance, headshot, and resumé of each artist.",
   "instagram_text": "Stay connected with Temple University Theater's current students and alumni on Instagram!",
   "content3": "If you would prefer to download all the actors' headshots and resumes at once for contact information, please click button below for a zip file.",
+  "video": "https://www.youtube.com/embed/QL2W7LgpmP8",
   "department_website_text": "For more information about our program, please visit our department website.",
   "department_website_url": "https://tfma.temple.edu/",
   "meta_title": "Temple Musical Theater"
