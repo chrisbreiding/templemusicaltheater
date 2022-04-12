@@ -36,6 +36,7 @@ collections:
           - { label: "Heading 1", name: heading1, widget: string }
           - { label: "Content 1", name: content1, widget: string }
           - { label: "Hero Image", name: hero_image, widget: image }
+          - { label: "Video", name: video, widget: image }
           - { label: "Heading 2", name: heading2, widget: string }
           - { label: "Content 2", name: content2, widget: string }
           - { label: "Content 3", name: content3, widget: string }
