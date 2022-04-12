@@ -41,14 +41,17 @@ body {
   padding: 0;
 }
 
+.outer {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .container {
   margin: 0 auto;
-  padding: 0 2rem;
   max-width: 960px;
 }
 
-nav,
-.addendum {
+nav {
   background: var(--secondary-color);
 }
 
@@ -60,7 +63,12 @@ h1,
 }
 
 h1 {
-  margin: 1rem 0 0;
+  margin: 0.8rem 0;
+}
+
+h1 a {
+  display: inline-block;
+  padding: 0.2em 0.5em;
 }
 
 h1 a,
@@ -70,11 +78,11 @@ h1 a:hover,
 h1 a:focus,
 h1 a:active {
   color: var(--light-color);
-  display: block;
   text-decoration: none;
 }
 
 .heading {
+  display: block;
   font-size: 2.2rem;
   letter-spacing: 2px;
   margin-bottom: 0.2rem;
@@ -88,7 +96,6 @@ h1 a:active {
   display: block;
   font-size: 1rem;
   line-height: 1.4;
-  margin: 0 0 1rem;
   text-transform: uppercase;
 }
 
@@ -165,9 +172,37 @@ nav .horizontal-buttons li {
   transform: none;
 }
 
+iframe:focus {
+  box-shadow: none;
+}
+
+.video {
+  height: 225px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .video {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .video {
+    height: 425px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .video {
+    height: 500px;
+  }
+}
+
 .actors {
   display: flex;
-  margin: 0 0 2em;
+  margin: 0 0 1em;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -219,7 +254,7 @@ nav .horizontal-buttons li {
   margin: 1.5rem 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .actor section {
     flex-direction: row;
   }
@@ -245,20 +280,22 @@ nav .horizontal-buttons li {
   width: 100%;
 }
 
-.addendum {
-  margin-top: 1rem;
-  padding: 1em 0 0.2em;
+.download {
+  background: var(--secondary-color);
 }
 
-.addendum ul {
-  margin-bottom: 0.5rem;
+.download,
+.addendum {
+  padding-top: 1em;
+  padding-bottom: 0.2em;
 }
 
 footer {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: var(--light-color);
   font-size: 1rem;
-  padding: 1em 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
 }
 

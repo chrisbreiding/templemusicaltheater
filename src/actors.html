@@ -9,31 +9,33 @@ renderData:
   title: "{{actor | full_name}}"
 ---
 
-<main class="actor container">
-  <h2>{{actor | full_name}}</h2>
-  <ul class="horizontal-buttons light-bg">
-    <li><a href="mailto:{{actor.email}}">Contact</a></li>
-    {% if actor.website %}<li><a href="{{actor.website}}" target="_blank" rel="noopener noreferrer">Website</a></li>{% endif %}
-    <li><a href="{{actor.photo_original}}" download>Download Headshot</a></li>
-    <li><a href="{{actor.resume}}" download>Download Resume</a></li>
-  </ul>
+<div class="outer">
+  <main class="actor container">
+    <h2>{{actor | full_name}}</h2>
+    <ul class="horizontal-buttons light-bg">
+      <li><a href="mailto:{{actor.email}}">Contact</a></li>
+      {% if actor.website %}<li><a href="{{actor.website}}" target="_blank" rel="noopener noreferrer">Website</a></li>{% endif %}
+      <li><a href="{{actor.photo_original}}" download>Download Headshot</a></li>
+      <li><a href="{{actor.resume}}" download>Download Resume</a></li>
+    </ul>
 
-  <section>
-    <aside>
-      <img src="{{actor.photo_large}}" alt="{{actor | full_name}} headshot" />
-    </aside>
-    <aside>
-      <div class="resume-container">
-        <div id="resume-wrapper">
-          <canvas id="resume-canvas"></canvas>
+    <section>
+      <aside>
+        <img src="{{actor.photo_large}}" alt="{{actor | full_name}} headshot" />
+      </aside>
+      <aside>
+        <div class="resume-container">
+          <div id="resume-wrapper">
+            <canvas id="resume-canvas"></canvas>
+          </div>
         </div>
-      </div>
-    </aside>
-  </section>
-  <section>
-    <iframe width="979" height="550" src="{{actor.video}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
-</main>
+      </aside>
+    </section>
+    <section>
+      <iframe class="video" src="{{actor.video}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </main>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.13.216/pdf.min.js" integrity="sha512-IM60GPudO4jk+ZQm3UlJgKHhXQi5pNDM6mP+pLKL968YgkHMc7He3aGJOVHEZ9rJ4vAaEtJ8W6SKa7Qq4inzBA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/static/js/actor.js"></script>

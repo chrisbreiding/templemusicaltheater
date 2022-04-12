@@ -5,11 +5,12 @@ renderData:
   description: "{{home.meta_description}}"
 ---
 
-<main>
+<main class="outer">
   <section class="container">
     <h2>{{home.heading1}}</h2>
     <p>{{home.content1 | linebreaks | safe}}</p>
     <img src="{{home.hero_image}}" />
+    <iframe class="video" src="{{home.video}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <h2 id="class-of">{{home.heading2}}</h2>
     <p>{{home.content2 | linebreaks | safe}}</p>
@@ -25,8 +26,10 @@ renderData:
       {% endfor %}
     </ul>
   </section>
+</main>
 
-  <section id="download" class="container">
+<main id="download" class="download outer">
+  <section class="container">
     <p>{{home.content3 | linebreaks | safe}}</p>
     <ul class="horizontal-buttons light-bg">
       <li>
@@ -41,24 +44,24 @@ renderData:
       </li>
     </ul>
   </section>
+</main>
 
-  <section class="addendum">
-    <div class="container">
-      <p>{{home.department_website_text}}</p>
-      <ul class="instagram horizontal-buttons">
-          <li>
-            <a href="{{home.department_website_url}}" target="_blank" rel="noopener noreferrer">
-              {{home.department_website_url}}
-            </a>
-          </li>
-      </ul>
+<main class="addendum outer">
+  <section class="container">
+    <p>{{home.department_website_text}}</p>
+    <ul class="instagram horizontal-buttons">
+        <li>
+          <a href="{{home.department_website_url}}" target="_blank" rel="noopener noreferrer">
+            {{home.department_website_url}}
+          </a>
+        </li>
+    </ul>
 
-      <p>{{home.instagram_text}}</p>
-      <ul class="instagram horizontal-buttons">
-        {% for account in home.instagram_accounts %}
-          <li><a href="{{account.url}}" target="_blank" rel="noopener noreferrer">{{account.text}}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+    <p>{{home.instagram_text}}</p>
+    <ul class="instagram horizontal-buttons">
+      {% for account in home.instagram_accounts %}
+        <li><a href="{{account.url}}" target="_blank" rel="noopener noreferrer">{{account.text}}</a></li>
+      {% endfor %}
+    </ul>
   </section>
 </main>
